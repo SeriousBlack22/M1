@@ -46,6 +46,15 @@ const profilesDatabase = [
     projects: ['Screen Speak', 'Culture Pulse', 'Trail & Error'],
     skills: ['critical analysis', 'interviewing', 'editorial writing', 'trend spotting'],
     vibe: 'Sharp, opinionated, with Tarantino-inspired dialogue patterns'
+  },
+  {
+    id: 6,
+    name: 'Sam Cortes',
+    bio: 'Marine biologist specializing in coral reefs. Creates underwater photography and short documentaries about ocean life. Passionate about sea conservation.',
+    interests: ['marine biology', 'sea', 'ocean', 'photography', 'conservation'],
+    projects: ['Coral Chronicles', 'Deep Blue', 'Ocean Wonders'],
+    skills: ['research', 'diving', 'photography', 'scientific writing'],
+    vibe: 'Passionate, calm, with a deep appreciation for nature'
   }
 ];
 
@@ -55,7 +64,7 @@ const knownKeywords = {
     'filmmaking', 'hiking', 'travel', 'cinema', 'storytelling', 'digital art', 'AI', 
     'abstract art', 'slow cinema', 'coding', 'comedy', 'absurdist humor', 'app development',
     'environmental science', 'forests', 'documentaries', 'classic cinema', 'film criticism',
-    'pop culture', 'writing', 'pulp fiction', 'art', 'tech', 'nature', 'adventure'
+    'pop culture', 'writing', 'pulp fiction', 'art', 'tech', 'nature', 'adventure', 'sea', 'ocean'
   ],
   skills: [
     'directing', 'writing', 'editing', 'photography', 'painting', 'AI art', 'digital design',
@@ -140,6 +149,16 @@ function parseQuery(query: string) {
   if (lowercaseQuery.includes('make films') || lowercaseQuery.includes('create movies')) {
     if (!extractedKeywords.interests.includes('filmmaking')) {
       extractedKeywords.interests.push('filmmaking');
+    }
+  }
+  
+  if (lowercaseQuery.includes('love sea') || lowercaseQuery.includes('love ocean') || 
+      lowercaseQuery.includes('like sea') || lowercaseQuery.includes('like ocean')) {
+    if (!extractedKeywords.interests.includes('sea')) {
+      extractedKeywords.interests.push('sea');
+    }
+    if (!extractedKeywords.interests.includes('ocean')) {
+      extractedKeywords.interests.push('ocean');
     }
   }
   
