@@ -36,7 +36,7 @@ export default function SearchBar({ onSearch, isLoading }: SearchBarProps) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={randomPlaceholder}
-          className="w-full px-5 py-4 text-lg rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent shadow-sm"
+          className="w-full px-5 py-4 text-lg text-gray-900 dark:text-white rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent shadow-sm bg-white dark:bg-gray-800 placeholder-gray-500"
           disabled={isLoading}
         />
         <button
