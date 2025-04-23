@@ -58,7 +58,7 @@ export default function Home() {
               </div>
             </div>
             <a 
-              href="https://github.com" 
+              href="https://github.com/SeriousBlack22/M1/tree/main/aifindr" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center text-gray-700 hover:text-purple-800 transition-colors"
