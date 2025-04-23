@@ -5,8 +5,10 @@ AIFindr is a platform where users input what they're looking for in a person —
 ![AIFindr Screenshot](public/screenshot.png)
 
 ## Live Demo
+![image](https://github.com/user-attachments/assets/579840fa-08e6-4229-afe3-9d56a5432e77)
 
-Visit [https://aifindr.vercel.app](https://aifindr.vercel.app) to see the application in action.
+
+Visit [https://mayawakiassesment1.vercel.app/](https://mayawakiassesment1.vercel.app/) to see the application in action.
 
 ## Features
 
